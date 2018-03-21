@@ -11,5 +11,11 @@ var jsapp = new Vue(
         data: {
             message: "Hello World!!",	
         },
+        methods: {
+            changeText: function(){
+                this.message = "Hi Beni";
+            },
+        }
+
     }
 );
