@@ -10,6 +10,10 @@ var jsapp = new Vue(
         el: "#js-app",
         data: {
             message: "Hello World!!",	
+            note: [
+                {nota: "5"},
+                {nota: "7"}
+            ],
         },
         methods: {
             changeText: function(){
