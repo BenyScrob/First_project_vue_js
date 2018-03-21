@@ -14,6 +14,19 @@ var jsapp = new Vue(
                 {nota: "5"},
                 {nota: "7"}
             ],
+            noteObj: [
+                {
+                    firstName: "Paul",
+                    lastName: "Barna",
+                    nota: 7
+                },
+                {
+                    firstName: "Bianca",
+                    lastName: "Bulc",
+                    nota: 7.5
+                }
+
+            ],
         },
         methods: {
             changeText: function(){
