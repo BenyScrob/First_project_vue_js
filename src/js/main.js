@@ -50,8 +50,10 @@ var jsapp = new Vue(
                this.x = event.clientX;
                this.y = event.clientY;
            },
+           alertMe: function(event) {
+                alert(event.target.value);
+           },
         }
-
     }
 );
 

@@ -48,19 +48,26 @@
         <p v-html="fullhref"></p>
 
         <hr>
+        <h1>Counter </h1>
         <div>Counter: {{counter}}</div>
         <p> <button v-on:click="incrementValue">add</button> </p> 
 
         <hr>
+        <h1>Mouse move </h1>
         <p v-on:mousemove="mPosition">Coordonates {{ x }} and {{ y }}</p>
-   </div>    
+
+        <hr>
+        <h1>Alert </h1>
+        <input type="text" v-on:keyup.13="alertMe($event)">
+
+    </div>    
 
 
    
-<!-- ============================== -->
-<hr>
+ <!-- ============================== -->
+ <hr>
  
-<h1>Exercise</h1>
+ <h1>Exercise</h1>
  <div id="exercise">
   <p>1.</p>  <p>Name (age): {{name}}   ({{age}})</p>
 
