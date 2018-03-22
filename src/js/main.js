@@ -28,6 +28,7 @@ var jsapp = new Vue(
             ],
             title: "Title 1",
             link:"https://www.google.ro/",
+            fullhref: "<a href='http://yahoo.com'>Yahoo</a>",
         },
         methods: {
             changeText: function(){
