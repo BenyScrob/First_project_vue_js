@@ -29,6 +29,7 @@ var jsapp = new Vue(
             title: "Title 1",
             link:"https://www.google.ro/",
             fullhref: "<a href='http://yahoo.com'>Yahoo</a>",
+            counter: 0,
         },
         methods: {
             changeText: function(){
@@ -39,7 +40,10 @@ var jsapp = new Vue(
             }, 
             sayHello2: function() {
                 this.title="Title 2";
-           }
+           },
+           incrementValue() {
+                this.counter++;
+           },
         }
 
     }
