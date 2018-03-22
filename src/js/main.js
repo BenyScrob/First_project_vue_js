@@ -27,6 +27,7 @@ var jsapp = new Vue(
                 }
 
             ],
+            title: "Title 1",
         },
         methods: {
             changeText: function(){
