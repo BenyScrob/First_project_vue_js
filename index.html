@@ -89,7 +89,32 @@
              <p> <button v-on:click="incrementValue">plus</button><button v-on:click="decrementValue">minus</button> </p> 
  
  </div>
-   
+
+
+
+  <!-- ============================== -->
+
+    <hr>
+    <h1>Tema(curs15)</h1>
+    <p>&nbsp &nbsp &nbsp &nbsp <i>(Id: Exercise2)</i> </p>
+    <div id="exercise2">
+
+     <p>1.</p>  <div>
+                  <button v-on:click="{{alertMe2()}}">Show Alert</button>
+                </div>
+                
+     <p>2.</p>  <div>
+                  <input  type="text" v-on:keydown="inputValue">
+                  <p>Value: {{value}}</p>
+                </div>
+     
+     <p>3.</p>  <div>
+                  <input type="text" v-on:keydown.13="inputValue">
+                  <p>Value: {{value}}</p>
+                </div>
+
+    </div>
+  
 
  
    <script src="dist/main.js"></script>

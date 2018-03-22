@@ -83,3 +83,22 @@ var exercise = new Vue({
     }
 
 });
+
+
+
+// ===============================================================
+
+var exercise2 = new Vue({
+    el: '#exercise2',
+    data: {
+        value:''
+    },
+    methods: {
+        alertMe2: function() {
+            alert("Isus te iubeste ❤❤❤ !!!");
+        },
+        inputValue: function (event) {
+            this.value = event.target.value;
+        }, 
+    }
+});
