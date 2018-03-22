@@ -44,3 +44,30 @@ var jsapp = new Vue(
 
     }
 );
+
+
+
+//  ==================================================
+
+var exercise = new Vue({
+    el: '#exercise',
+    data: {
+        age: 20 ,
+        name: 'Beniamin Scrob',
+        text: 'Beni Scrob',
+        imagine:"<img style='width:100px; height:100px' src='https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/14484776_1052056211582127_4514996501344980644_n.jpg?oh=2afefe8b00f84d3f4b1af84f5808b814&oe=5B3C175C'>",
+        counter: 0,
+    },
+    methods: {
+        randomFloat: function () {
+            return Math.random() * 100;
+        },
+        incrementValue() {
+            this.counter++;
+        },
+        decrementValue() {
+            this.counter--;
+        },
+    }
+
+});

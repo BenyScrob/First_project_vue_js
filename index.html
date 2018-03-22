@@ -47,6 +47,34 @@
         <hr>
         <p v-html="fullhref"></p>
    </div>    
+
+
+   
+<!-- ============================== -->
+<hr>
+ 
+<h1>Exercise</h1>
+ <div id="exercise">
+  <p>1.</p>  <p>Name (age): {{name}}   ({{age}})</p>
+
+  <p>2.</p>  <p>Age(*3): {{ age * 3}}</p>
+
+  <p>3.</p>  <p v-once>Random Float: {{ randomFloat() }}</p>
+    
+  <p>4.</p>  <div>
+                 <p v-html="imagine"></p>
+             </div>
+
+  <p>5.</p>  <div>
+               Text:  {{text}} <br> <br>
+                <input v-model="text">  
+              </div> 
+        <br>
+     
+  <p>6.</p>  <div>Counter: {{counter}}</div>
+             <p> <button v-on:click="incrementValue">plus</button><button v-on:click="decrementValue">minus</button> </p> 
+ 
+ </div>
    
 
  
