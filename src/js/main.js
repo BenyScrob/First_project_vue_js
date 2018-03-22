@@ -32,6 +32,9 @@ var jsapp = new Vue(
             changeText: function(){
                 this.message = "Hi Beni";
             },
+            sayHello: function() {
+                return this.title;
+            }, 
         }
 
     }
