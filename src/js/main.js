@@ -25,9 +25,9 @@ var jsapp = new Vue(
                     lastName: "Bulc",
                     nota: 7.5
                 }
-
             ],
             title: "Title 1",
+            link:"https://www.google.ro/",
         },
         methods: {
             changeText: function(){
