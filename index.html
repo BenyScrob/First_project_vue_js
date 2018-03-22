@@ -34,7 +34,8 @@
         <hr>
         <span>
         {{sayHello()}}
-        </span> <br>
+        </span> <br> <br>
+        <button v-on:click="{{sayHello2()}}">Change Title</button>
 
         <hr>
         <a v-bind:href="link">Google</a>
@@ -42,7 +43,6 @@
         <hr>
         <h1 v-once>{{title}}</h1>
         <p v-once>{{message}}</p>
-
    </div>    
    
 

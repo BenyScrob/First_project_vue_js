@@ -38,7 +38,7 @@ var jsapp = new Vue(
             }, 
             sayHello2: function() {
                 this.title="Title 2";
-           },
+           }
         }
 
     }
