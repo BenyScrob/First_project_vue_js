@@ -36,6 +36,9 @@ var jsapp = new Vue(
             sayHello: function() {
                 return this.title;
             }, 
+            sayHello2: function() {
+                this.title="Title 2";
+           },
         }
 
     }
