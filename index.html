@@ -9,7 +9,7 @@
    </head>
    <body>
    
-   <div id="js-app" v-on:mousemove="mPosition($event)">
+   <div id="js-app"     v-on:mousemove="mPosition($event) ">
         {{message}}
         <br>
         <button v-on:click="changeText">Say Hi</button>
@@ -50,6 +50,9 @@
         <hr>
         <div>Counter: {{counter}}</div>
         <p> <button v-on:click="incrementValue">add</button> </p> 
+
+        <hr>
+        <p v-on:mousemove="mPosition">Coordonates {{ x }} and {{ y }}</p>
    </div>    
 
 

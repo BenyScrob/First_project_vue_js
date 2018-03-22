@@ -30,6 +30,8 @@ var jsapp = new Vue(
             link:"https://www.google.ro/",
             fullhref: "<a href='http://yahoo.com'>Yahoo</a>",
             counter: 0,
+            x: 0,
+            y: 0,
         },
         methods: {
             changeText: function(){
@@ -43,6 +45,10 @@ var jsapp = new Vue(
            },
            incrementValue() {
                 this.counter++;
+           },
+           mPosition: function (event) {
+               this.x = event.clientX;
+               this.y = event.clientY;
            },
         }
 
