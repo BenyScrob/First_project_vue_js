@@ -11,7 +11,11 @@ module: {
 			loader: "css-loader" // translates CSS into CommonJS
 		}, {
 			loader: "sass-loader" // compiles Sass to CSS
-		}]
+		}],	
+	}],
+	rules: [{
+        test:/\.css$/, 
+		use: ['style-loader', 'css-loader']
 	}]
 },
 entry:['./js/main.js'],
