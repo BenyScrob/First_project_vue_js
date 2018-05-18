@@ -8,7 +8,7 @@
        <title>Document</title>
    </head>
    <body>
-   
+
    <div id="js-app"     v-on:mousemove="mPosition($event) ">
         {{message}}
         <br>
@@ -64,7 +64,7 @@
 
 
    
- <!-- ============================== -->
+ <!--  ============================== -->
  <hr>
  
  <h1>Exercise</h1>
@@ -115,9 +115,29 @@
                 </div>
 
     </div>
-  
 
- 
+ <!--  Search list -->
+
+ <hr>
+
+    
+     <div id="app">
+            <h1>{{title}} </h1>
+         <input type = "text" v-model="findName">
+    <ul>
+        <li v-for="student in search" > {{student}} </li>
+    </ul>
+    </div>
+
+
+
+    <div id="app2">
+            <h1>{{title}} </h1>
+            <button v-on:click="changeTitle">ChangeTitle</button>
+            <button v-on:click="destroy">destroy</button>
+    </div>
+
+
    <script src="dist/main.js"></script>
    </body>
 </html>

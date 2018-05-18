@@ -5,8 +5,6 @@ require('../scss/main.scss');
 require('bootstrap/dist/css/bootstrap.css');
 require('bootstrap');
 
-
-
 var jsapp = new Vue(
     {
         el: "#js-app",
@@ -103,4 +101,86 @@ var exercise2 = new Vue({
             this.value = event.target.value;
         }, 
     }
+}); 
+
+// Search list
+
+var widget1 = new Vue ({
+    el: "#app",
+    data: {
+        title:"TITLU",
+        findName:'',
+        students: [
+            "Daniel",
+            "Beniamin",
+            "Paul",
+            "Flaviu",
+            "Vladut"
+        ]
+    },
+    computed:{
+         search: function() {
+            var inputText = new RegExp(this.findName, "i");
+            return this.students.filter(el => el.match(inputText));
+         }
+    },
+    watch:
+    {
+        findName:function(value) {
+            console.log("changed: "+ value);
+        }
+    }
 });
+
+
+
+    var widget2 = new Vue ({
+        //el: "#app2",
+        data: {
+            title:"Search in list ",
+        },
+        methods:{
+            changeTitle: function () {
+                this.title="Search in list 2";
+                widget1.title=this.title;
+            },
+            destroy : function () {
+                this.$this.destroy();
+            },
+        },   
+            
+         beforeCreate: function () {
+            console.log("beforeCreate")
+         },
+         created: function () {
+            console.log("created")
+         },
+         beforeMount: function(){
+            console.log("beforeMount") 
+         },
+         mounted: function (){
+            console.log("mounted") 
+         },
+         beforeUpdate: function (){
+            console.log("beforeUpdate")  
+         },
+         updated: function (){
+            console.log("updated") 
+         },
+         beforeDestroy: function (){
+            console.log("beforeDestroyed") 
+         },
+         destroyed: function (){
+            console.log("destroyed") 
+         },
+
+
+});
+
+widget1.titl="search";
+
+
+widget2.$mount(document.getElementById("app2"));
+
+console.log(widget1);
+console.log(widget2);
